@@ -24,7 +24,7 @@ class AscensorFactory extends Factory
             'modelo_id' => $this->faker->randomElement($nModelos),
             'zona_id' => $this->faker->randomElement($nZonas),
             'segmento'=>$this->faker->randomElement(['industrial','hospital','comercial','residencial']),
-            'sala_maquinas'=>$this->faker->boolean,
+            'sala_maquinas'=>$this->faker->boolean(),
         ];
     }
 
